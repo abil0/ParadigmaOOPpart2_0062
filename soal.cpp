@@ -55,3 +55,21 @@ public:
     }
 };
 
+int main() {
+    cout << " Sistem Automasi Akhir Bulan Bank Gibran Jaya " << "\n\n";
+    RekeningBank* daftarRekening[4];
+    RekeningSyariah nasabah1("Pakaya", 5000000);
+    RekeningKonvensional nasabah2("anton", 2500000);
+    RekeningPremium nasabah3("yudi", 15000000); 
+    RekeningPremium nasabah4("Enggar", 8000000);  
+    daftarRekening[0] = &nasabah1;
+    daftarRekening[1] = &nasabah2;
+    daftarRekening[2] = &nasabah3;
+    daftarRekening[3] = &nasabah4;
+
+    for (int i = 0; i < 4; i++) {
+        daftarRekening[i]->potongAdmin();
+    }
+
+    return 0;
+}
