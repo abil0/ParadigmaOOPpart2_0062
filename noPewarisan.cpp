@@ -16,5 +16,7 @@ public:
 };
 
 
-
+class derivedClass : public baseClass {
+  return 0;
+}
 
